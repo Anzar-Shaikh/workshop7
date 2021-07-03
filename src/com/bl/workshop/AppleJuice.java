@@ -6,7 +6,7 @@ public class AppleJuice extends FoodItem implements IVeg {
         taste = Taste.SWEET;
         preparationTime = 20;
         category = Category.JUICES;
-        name = "Apple Juice.";
+        name = "AppleJuice";
     }
     public void printMainIngredients() {
         System.out.println("main of apple juice is ingredient is apple");

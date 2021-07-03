@@ -1,9 +1,6 @@
 package com.bl.workshop;
 
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
 
 public class FoodManager {
     Set<FoodItem> foodList = new HashSet<>(); // it do not add multiple items of same object.
@@ -42,4 +39,40 @@ public class FoodManager {
             }
         }
     }
+//    void sowMenu() {
+//        Scanner sc = new Scanner(System.in);
+//        System.out.print(" 1 - update food item ");
+//        int choice = sc.nextInt();
+//        switch (choice){
+//            case 1 :
+//                updateFoodItem();
+//                break;
+//        }
+//
+//    }
+//    void updateFoodItem(){
+//        Scanner sc = new Scanner(System.in);
+//        System.out.print("Enter food item : ");
+//        String item = sc.nextLine();
+//        getFoodItem(item);
+//
+//    }
+    FoodItem getFoodItem(String name){
+        Iterator iterator = foodList.iterator();
+        if (iterator.hasNext()) {
+            for (int i = 0 ; i < foodList.size(); i++) {
+                if (iterator.hasNext()) {
+                    FoodItem fooditem = (FoodItem) iterator.next();
+                    if (fooditem.name.equalsIgnoreCase(name)){
+                        return fooditem;
+                    }
+                }
+            }
+        }
+        return null;
+    }
+
+
+
+
 }

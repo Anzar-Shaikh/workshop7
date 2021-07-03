@@ -5,7 +5,7 @@ class Biryani  extends FoodItem implements INonVeg{
         taste = Taste.SPICY;
         preparationTime = 45;
         category = Category.MAIN_COURSE;
-        name = "Biryani.";
+        name = "Biryani";
     }
 
     @Override

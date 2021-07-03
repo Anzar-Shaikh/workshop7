@@ -11,7 +11,7 @@ public abstract class FoodItem {
 //    Type type;
     Taste taste;
     float price;
-    short preparationTime;
+    byte preparationTime;
     Category category;
     String name;
 
